@@ -38,6 +38,44 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+        {
+      "label": "Launch mcps2.py",
+      "type": "shell",
+      "command": "uv run python src/server/mcps2.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": false,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Launch mcps3_pagination.py",
+      "type": "shell",
+      "command": "uv run python src/server/mcps3_pagination.py",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": false,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
