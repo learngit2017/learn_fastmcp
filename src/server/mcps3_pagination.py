@@ -52,7 +52,11 @@ def get_items(cursor: str | None = None) -> dict:
     next_offset = offset + PAGE_SIZE
     next_cursor = None if (next_offset >= len(mock_data)) else encode_cursor(next_offset)
     items = mock_data[offset:next_offset]
-    return {"items": items, "next_cursor": next_cursor}
+    
+    return {
+        "items": items, 
+        "next_cursor": next_cursor
+    }
 
 if __name__ == "__main__":
     server.run(transport="http",  port=8113)

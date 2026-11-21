@@ -35,7 +35,8 @@ async def main():
         slice = (await client.call_tool("get_items", {"cursor": next_cursor})).data
         for item in slice["items"]:
           print(item)
-          
+
 
 if __name__ == "__main__":
-    asyncio.run(main())       
+  asyncio.run(main())
+
